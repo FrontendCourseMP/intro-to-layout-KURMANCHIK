@@ -46,29 +46,151 @@
     font-weight: 800;
     src: url('../fonts/montserrat-v26-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+:root {
+    --pr-color: #121214;
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 130%; /* 20.8px */
+    background: #FFF;     
+}
+
 .wrapper {
     max-width: 320px;
     margin: 0 auto;
     padding: 0 8px;
     width: 100%
 }
+
 * {
     box-sizing: border-box;
 }
-.text-1 {
-    color: #121214;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
+
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
 }
-.text-1-h {
+  
+ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.section1__header {
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.3rem */
+}
+
+.section1_text {
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.3rem */
+}
+
+.button__scroll {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #037E8C;
+    padding: 1px;
+}
+.blue {
+    background: #037E8C;
+}
+.black {
+    background: black;
+}
+.white {
+    background: white;
+}
+
+.section1__button {
+    width: 13.75rem;
+    height: 2.8125rem;
+    flex-shrink: 0;
+    color: #FFFFFF;
+    border-radius: 0.5625rem;
+}
+.section1__header {
+    color: #FFF;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.5%; /* 2.77875rem */
+    letter-spacing: 0.0675rem;   
+}
+
+.section2__header2 {
     color: #121214;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 1.2rem */
+    line-height: 120%;
 }
+.section2__text {
+    color: #121214;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;   
+}
+
+.section3__header-1 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 1.95rem */
+}
+
+.section3__header-2 {
+    color: #121214;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.7%; /* 1.6305rem */
+}
+
+.section3__text {
+    color: #121214;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.7%; /* 1.22288rem */
+}
+
+.section3__ul-li {
+    color: #121214;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.7%; /* 0.95113rem */
+    text-transform: uppercase;
+}
+
+b {
+    color: #121214;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.7%;
+    text-transform: lowercase;
+}
+
+.section3__text-1{
+        color: #121214;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 1.4rem */
+        max-width: 21.0625rem;
+}
+
 .text-2-h {
     color: #121214;
     font-size: 1.5rem;
@@ -77,42 +199,8 @@
     line-height: 130%; /* 1.95rem */
 }
 
-.header-2 {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 1.95rem */
-}
-.header-3 {
-    color: #121214;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 108.7%; /* 1.6305rem */
-}
-.header-3-1 {
-    color: #121214;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 108.7%; /* 1.22288rem */
-}
-.li-1 {
-    color: #121214;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108.7%; /* 0.95113rem */
-    text-transform: uppercase;
-}
-.p-1-1 {
-    color: #121214;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 108.7%;
-    text-transform: lowercase;
-    }
+
+
 .h-4{
     color: #121214;
     font-size: 1.125rem;
@@ -129,7 +217,7 @@
     text-transform: uppercase;
 }
 
-.scroll-text{
+.button__scroll-text{
     color: #121214;
     font-family: Futura PT;
     font-size: 1.125rem;
@@ -137,14 +225,7 @@
     font-weight: 300;
     line-height: normal;
 }
-.text-1{
-    color: #121214;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 1.4rem */
-    max-width: 21.0625rem;
-}
+
 .button-blue-2{
     width: 10.25rem;
     height: 2.5625rem;
@@ -179,14 +260,6 @@
     font-weight: 500;
     line-height: 120%; /* 1.2rem */
 }
-:root {
-    --pr-color: #121214;
-    font-family: 'Montserrat';
-    font-style: normal;
-    line-height: 130%; /* 20.8px */
-    background: #FFF; 
-    
-}
 
 body {
     color: div(--pr-color);
@@ -202,24 +275,6 @@ h1 {
     margin-top: 0;
 }
 
-.fst_header {
-    color: #FFF;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 123.5%; /* 2.77875rem */
-    letter-spacing: 0.0675rem;
-}
-.fst_header-1 {
-    color: #FFF;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 1.3rem */
-}
-.img {
-    background: #121214;
-}
 .header1 {
     color: #FFF;
     font-style: normal;
@@ -242,43 +297,4 @@ h1 {
     /* включаем абсолютное позиционирование относительно блока с relative */
     position: absolute;
   }
-.button-blue-1 {
-    width: 13.75rem;
-    height: 2.8125rem;
-    flex-shrink: 0;
-    background: #037E8C;
-    color: #FFFFFF;
-    border-radius: 0.5625rem;
-}
-.button-round-blue {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: #037E8C;
-    padding: 1px;
-}
-.button-round-white {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 1px;
-}
-.button-round-black {
-    width: 0.5rem;
-    height: 0.5rem;
-	border-radius: 50%;
-    background: #121214;
-    padding: 1px;
-}
-li {
-    list-style-type: none;
-    /* Убираем маркеры */
-}
-  
-ul {
-    margin-left: 0;
-    /* Отступ слева в браузере IE и Opera */
-    padding-left: 0;
-    /* Отступ слева в браузере Firefox, Safari, Chrome */
-}
+
