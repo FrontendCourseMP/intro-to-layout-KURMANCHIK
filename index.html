@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <img src="#" alt="Логотип">
+        <a href="#"><img src="#" alt="Логотип"></a>
         <button name="button"><img src="" alt="Меню"></button>   
     </header>
     <main>
-        <section class="black" style="color:white">
+        <section id="begin" class="black" style="color:white">
             <h1 class="section1__header">Экскурсии на квадроциклах в Геленджике</h1>
             <p class="section1__text">Приезжайте за новыми ощущениями и эмоциями!</p>
-            <button type="button" class="section1__button blue">Подобрать маршрут<img src="#" alt="Стрелка"></button>
+            <a href="#tracks">Подобрать маршрут<img src="#" alt="Стрелка"></a>
             
             <button type="button" class="button__scroll blue"></button>
             <button type="button" class="button__scroll white"></button>
@@ -25,6 +25,7 @@
             <p class="button__scroll-text" style="color:white">scroll</p>
         </section>
         <section>
+            <h2>Преимущества</h2>
             <div>
                 <img src="#" alt="экскурсии">
                 <h3 class="section2__header">Увлекательные экскурсии</h3>
@@ -47,7 +48,7 @@
             </div>
         </section>
         <section>
-            <h2 class="section3__header-1" style="color:#121214">Наши маршруты</h2>
+            <h2 id="tracks" class="section3__header-1" style="color:#121214">Наши маршруты</h2>
             <div>
                 <h3 class="section3__header-2">БАЗОВЫЙ</h3>
                 <div></div>
@@ -75,13 +76,13 @@
             <div>
                 <h3 class="header-3">РАСШИРЕННЫЙ</h3>
                 <div></div>
-                <p class="header-3-1">от 16000 <img src="" alt="рубль"></p>
+                <p class="header-3-1">от 16000</p>
                 <ul>
                     <li class="li-1"><img src="" alt="">ВРЕМЯ В ПУТИ:<b class="p-1-1">6 - 8 часов</b></li>
                     <li class="li-1"><img src="" alt="">РАССТОЯНИЕ:<b class="p-1-1">60 - 70 км</b></li>
                     <li class="li-1"><img src="" alt="">СЛОЖНОСТЬ:<b class="p-1-1">5***</b></li>
                 </ul>
-                <h4 class="h-4-1">Маршрут</h4><img src="" alt="">
+                <h4 class="h-4-1">Маршрут</h4><img src="#" alt="#">
                 <p class="text-1">
                     Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис --Грозовые Ворота - Шашлыки - Цыгельские водопад (чаша любви) - Форсаж 
                 </p>
@@ -99,7 +100,7 @@
             <div>
                 <h3 class="header-3">EXPERIENCE</h3>
                 <div></div>
-                <p class="header-3-1">от 7000 <img src="" alt="рубль"></p>
+                <p class="header-3-1">от 7000</p>
                 <ul>
                     <li class="li-1"><img src="" alt="">ВРЕМЯ В ПУТИ:<b class="p-1-1">4 часа</b></li>
                     <li class="li-1"><img src="" alt="">РАССТОЯНИЕ:<b class="p-1-1">40 - 50 км</b></li>
@@ -122,70 +123,72 @@
             </div> 
         </section>
         <section>
-            <h2 class="h5-1">Затрудняетесь выбрать маршрут?</h2>
+            <h2>Затрудняетесь выбрать маршрут?</h2>
             <p class="p2-1">Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию</p>
             <a href="#">Начать тест</a>
         </section>
         <section>
             <h2>Наша команда</h2>
             <div>
-                <img src="#" alt="">
-                <h3>Юлиана</h3>
+                <img src="#" alt="Юлиана">
+                <p>Юлиана</p>
                 <p>руководитель</p>
             </div>
             <div>
-                <img src="#" alt="">
-                <h3>Максим</h3>
+                <img src="#" alt="Максим">
+                <p>Максим</p>
                 <p>старший инструктор</p>
             </div>
             <div>
-                <img src="" alt="">
-                <h3>Кристина</h3>
+                <img src="#" alt="Кристина">
+                <p>Кристина</p>
                 <p>администратор</p>
             </div>
             <div>
-                <img src="" alt="">
-                <h3>Юрий</h3>
+                <img src="#" alt="Юрий">
+                <p>Юрий</p>
                 <p>старший механик</p>
             </div>
         </section>
-        <section>
+        <section id="rel">
             <h2>Условия предоставления услуг</h2>
-                <div><p>При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</p></div>
-                <div><p>К управлению НЕ ДОПУСКАЮТСЯ лица младше 16 лет и лица в алкогольном опъянении!</p></div>
-                <div><p>Распивать спиртные напитки во время проката, аренды ЗАПРЕЩЕНО! (После?) На ваше усмотрение</p></div>
-                <div><p>Управление осуществляйте в меру своих сил и возможностей. Не переоценивайте себя! Это опасно!!!</p></div>
-                <div><p>Перед каждый катанием опытный инструктор научит Вас основам управление и будет сопровождать на протяжении всего маршрута.</p></div></li>
-                <div><p>При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</p></div>
+            <ul>
+                <li>При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</li>
+                <li>К управлению НЕ ДОПУСКАЮТСЯ лица младше 16 лет и лица в алкогольном опъянении!</li>
+                <li>Распивать спиртные напитки во время проката, аренды ЗАПРЕЩЕНО! (После?) На ваше усмотрение</li>
+                <li>Управление осуществляйте в меру своих сил и возможностей. Не переоценивайте себя! Это опасно!!!</li>
+                <li>Перед каждый катанием опытный инструктор научит Вас основам управление и будет сопровождать на протяжении всего маршрута.</li>
+                <li>При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</li>
+            </ul>
         </section>
-        <section>
+        <section id="spechial">
             <h2>Спецпредложения</h2>
             <div>
-                <img src="" alt="День Рождения"> 
-                <h3>Скидка 10%</h3>
-                <h4>на День Рождения</h4>
+                <img src="#" alt="День Рождения"> 
+                <p>Скидка 10%</p>
+                <p>на День Рождения</p>
                 <p>в честь Дня Рождения - дарим имениннику скидку 10%</p>
             </div>
             <div>
-                <img src="" alt=""> 
+                <img src="#" alt="Праздник"> 
                 <p>клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
-                <button type="button">Начать тест</button>
+                <a href="#">Начать тест</a>
             </div>
         </section>
         <section>
             <h2>Подарочный сертификат</h2>
             <p>Хотите сделать оригинальный подарок? Подарите незабываемые эмоции - лучший подарок!</p>
-            <img src="" alt="">
+            <img src="#" alt="Подарок">
             <p>
                 Хотите удивить своих близких оригинальным подарком? Подарочный сертификат на экскурсию на квадроциклах станет 
                 не просто интересным подарком, но и реальной возможностью приблизить Ваших друзей и близких к новому увлечению.
             </p>
             <button type="button">Подберем сертификат для вас</button>
         </section>
-        <section>
+        <section id="questions">
             <h2>Вопросы-ответы</h2>
             <div>
-                <h4>Актуальный вопрос?</h4>
+                <p>Актуальный вопрос?</p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt iure, 
                     vero ab temporibus corrupti accusantium blanditiis? Voluptate repudiandae itaque distinctio, 
@@ -194,7 +197,12 @@
                 <button></button>
             </div>
             <div>
-                <h4>Актуальный вопрос?</h4>
+                <p>Актуальный вопрос?</p>
+                <p></p>
+                <button></button>
+            </div>
+            <div>
+                <p>Актуальный вопрос?</p>
                 <p></p>
                 <button></button>
             </div>
@@ -204,51 +212,45 @@
                 <button></button>
             </div>
             <div>
-                <h4>Актуальный вопрос?</h4>
-                <p></p>
-                <button></button>
-            </div>
-            <div>
-                <img src="" alt="картинка со значком чата">
+                <img src="#" alt="картинка со значком чата">
                 <h3>Есть вопросы?</h3>
                 <p>
                     Не стесняйтесь обращаться к нам, если у вас есть какие-либо вопросы, предложения
                     или идеи для сотрудничества
                 </p>
-                <button>Задать вопрос</button>
+                <a href="#">Задать вопрос</a>
             </div>
             <div></div>
         </section>
-        <section>
-            <h2>Контакты</h2>
-            <img src="" alt="карта">
-            <div><img src="" alt="ярлык"><p>Город Геленджик</p></div>
-            <div><img src="" alt="ярлык"><p>experience@groupgrand.ru</p></div>
-            <div><img src="" alt="ярлык"><p>+7 928 428-00-62</p></div>
-            <div>
-                <img src="" alt="ярлык">
-                <p>
-                    <ul>
-                        <li>Пн-Пт: 9:00 - 18:00</li>
-                        <li>Сб: 9:00 - 17:00</li>
-                        <li>Вс - выходной</li>
-                    </ul>
-                </p>
-            </div>
-            <h3>Написать нам:</h3>
-            <img src="#" alt="карта">
-            <img src="#" alt="карта">
-        </section>
     </main>
-    <footer>
+    <footer id="contacts">
+        <h2>Контакты</h2>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91cd7c54a5cc916d38c80605e69cb6d4fb0799b86279aab54d7385d714ac4278&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+        <div><img src="#" alt="ярлык"><p>Город Геленджик</p></div>
+        <div><img src="#" alt="ярлык"><p>experience@groupgrand.ru</p></div>
+        <div><img src="#" alt="ярлык"><p>+7 928 428-00-62</p></div>
+        <div>
+            <img src="#" alt="ярлык">
+            <ul>
+                <li>Пн-Пт: 9:00 - 18:00</li>
+                <li>Сб: 9:00 - 17:00</li>
+                <li>Вс - выходной</li>
+            </ul>
+        </div>
+            <h3>Написать нам:</h3> 
+            <a href="#"><img src="#" alt="карта"></a>
+            <a href="#"><img src="#" alt="карта"></a>
         <div></div>
-        <img src="" alt="ярлык">
-        <div>МАРШРУТЫ</div>
-        <div>ГАЛЕРЕЯ</div>
-        <div>ВОПРОС-ОТВЕТ</div>
-        <div>КОНТАКТЫ</div>
-        <div>УСЛОВИЯ</div>
-        <div>СПЕЦПРЕДЛОЖЕНИЯ</div>
+        <a href="#begin"><img src="#" alt="ярлык"></a>
+        <ul>
+            <li><a href="#tracks">МАРШРУТЫ</a></li>
+            <li><a href="#">ГАЛЕРЕЯ</a></li>
+            <li><a href="#questions">ВОПРОС-ОТВЕТ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+            <li><a href="#rel">УСЛОВИЯ</a></li>
+            <li><a href="#spechial">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+        </ul>
         <div></div>
         <p>
             С CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов
