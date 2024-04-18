@@ -131,8 +131,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-  padding-top: 162px;
-  padding-bottom: 77px;
+    padding-top: 162px;
+    padding-bottom: 77px;
 }
 .intro .container{
   padding: 0 33px;
@@ -1079,6 +1079,8 @@ nav ul a{
   .intro{
     background-image: url(../images/bg_web.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
     padding-top: 0;
     padding-bottom: 192px;
   }

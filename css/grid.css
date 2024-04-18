@@ -1,0 +1,170 @@
+:root {
+    font-size: 16px;
+    --blue: #037E8C;
+    --black: #121214;
+    --white: #FFFFFF;
+    --whitedark: #F4F4F4;
+    --gray: #808080;
+    --white-opacity: rgba(255,255,255,0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(--black);
+}
+.mondrian {
+    border-radius: 9px;
+    width: 400px;
+    height: auto;
+    margin: 160px auto;
+    display: grid;
+    grid-template-areas:
+        "a1 a1 a2 a2"
+        "a3 a3 a4 a4"
+        "a3 a3 a5 a6"
+        "a7 a9 a8 a8"
+    ;
+    gap: 8px;
+    border: 2px solid black;
+  }
+  
+  .block1 {
+    background-color: white;
+    grid-area: a1;
+    height: 30px;
+  }
+  
+  .block2 {
+    background-color: yellow;
+    grid-area: a2;
+    height: 30px;
+  }
+  
+  .block3 {
+    background-color: red;
+    grid-area: a3;
+    height: 368px;
+  }
+  
+  .block4 {
+    background-color: yellow;
+    grid-area: a4;
+    height: 180px;
+  }
+  .block5 {
+    background-color: white;
+    grid-area: a5;
+    height: 180px;
+  }
+  .block6 {
+    background-color: white;
+    grid-area: a6;
+    height: 180px;
+  }
+  .block7 {
+    background-color: black;
+    grid-area: a7;
+    height: 70px;
+  }
+  .block8 {
+    background-color: white;
+    grid-area: a8;
+    height: 70px;
+  }
+  .block9 {
+    background-color: white;
+    grid-area: a9;
+    height: 70px;
+  }
+  .stat-grid{
+    width: 600px;
+    height: auto;
+    margin: 160px auto;
+    display: grid;
+    grid-template-areas:
+        "gl g1 g1 g1 g1 g1 g1"
+        "gl g2 g2 g3 g3 g4 g4"
+        "gl g5 g5 g5 g6 g6 g6"
+    ;
+    gap: 10px;
+    background-color: var(--whitedark);
+  }
+  .graphic1{
+    grid-area: g1;
+    background-color: var(--black);
+  }
+  .graphic2{
+    grid-area: g2;
+    background-color: var(--black);
+  }
+  .graphic3{
+    grid-area: g3;
+    background-color: var(--black);
+  }
+  .graphic4{
+    grid-area: g4;
+    background-color: var(--black);
+  }
+  .graphic5{
+    grid-area: g5;
+    background-color: var(--black);
+  }
+  .graphic6{
+    grid-area: g6;
+    background-color: var(--black);
+  }
+  .stat-links{
+    padding: 40px;
+    grid-area: gl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+  }
+  .stat-links a{
+    color: var(--white);
+  }
+  .grid-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 200px));
+    grid-gap: 10px;
+    margin-bottom: 150px;
+    align-items: center;
+  }
+  .grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-item:nth-of-type(1){
+    background-image: url(../images/offer2.png);
+  }
+  .grid-item:nth-of-type(2){
+    background-image: url(../images/car1.jpg);
+  }
+  .grid-item:nth-of-type(3){
+    background-image: url(../images/shelk.jpg);
+  }
+  .grid-item:nth-of-type(4){
+    background-image: url(../images/ula.jpg);
+  }
+  .grid-item:nth-of-type(5){
+    background-image: url(../images/bg_web.jpg);
+  }
+  .grid-item:nth-of-type(6){
+    background-image: url(../images/carfirst.jpg);
+  }
+  .grid-item a{
+    display: block;
+    padding: 8px 16px;
+  }
+
+
+  .footer{
+    background-color: var(--whitedark);
+  }

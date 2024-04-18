@@ -1,0 +1,83 @@
+:root {
+    font-size: 16px;
+    --blue: #037E8C;
+    --black: #121214;
+    --white: #FFFFFF;
+    --whitedark: #F4F4F4;
+    --gray: #808080;
+    --white-opacity: rgba(255,255,255,0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(--black);
+}
+.footer{
+    background-color: var(--whitedark);
+  }
+main{
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  fieldset {
+    flex: 0 0 calc(48% - 10px);
+    margin-bottom: 20px;
+    border: none;
+    color: #fff;
+  }
+  legend {
+    font-weight: bold;
+    color: #fff;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+  }
+  button img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .gender{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }

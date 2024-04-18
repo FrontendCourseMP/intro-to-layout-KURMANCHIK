@@ -1,0 +1,191 @@
+:root {
+  font-size: 16px;
+  --blue: #037e8c;
+  --black: #121214;
+  --white: #ffffff;
+  --whitedark: #f4f4f4;
+  --gray: #808080;
+  --white-opacity: rgba(255, 255, 255, 0.4);
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: var(--black);
+}
+.footer {
+  background-color: var(--whitedark);
+}
+main {
+  margin: 150px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+fieldset {
+  flex: 0 0 calc(48% - 10px);
+  margin-bottom: 20px;
+  border: none;
+  color: #fff;
+}
+legend {
+  font-weight: bold;
+  color: #fff;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+}
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+button[type="reset"] {
+  background-color: #f44336;
+  color: white;
+}
+button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.gender {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo1 {
+  transform: rotate(30deg) scale(1.5) skewX(10deg) skewY(10deg);
+}
+input:focus + label {
+  color: #059eaf;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px #037e8c;
+}
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: #037e8c;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
+  content: "☯";
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+input:required {
+  border-left: 3px solid red;
+}
+
+label[for]:has(+ input:required):after {
+  content: "*";
+  color: red;
+  margin-left: 0px;
+}
+
+label[for]:has(+ input:required):hover:after {
+  content: "Обязательно!";
+  color: red;
+  background-color: white;
+  padding: 1px 1px;
+  border-radius: 3px;
+  position: relative;
+  white-space: nowrap;
+}
+
+dl {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+dt {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+dd {
+  text-align: justify;
+}
+
+dd span {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+dd::before {
+  content: "🛈";
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.form2 {
+  margin-top: 20px;
+}
+fieldset {
+  margin-bottom: 15px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+li:nth-child(even) input[type="checkbox1"] {
+  background-color: #add3f1;
+}
+
+li:nth-child(odd) input[type="checkbox1"] {
+  background-color: #fff;
+}

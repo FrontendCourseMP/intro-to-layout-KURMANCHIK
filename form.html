@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>CF Moto</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container container__header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Логотип CF Moto">
+        </a>
+        <div class="header-links">
+            <nav>
+                <a href="#routes">Маршруты</a>
+                <a href="grid.html">Галерея</a>
+                <a href="#faq">Вопрос-Ответ</a>
+                <a href="#contacts">Контакты</a>
+                <a href="form.html">Забронировать</a>
+            </nav>
+            <div class="header-phone">
+                <a href="tel:+79283332645">+7 928 333 26 45</a>
+                <button>
+                    Перезвоните мне
+                </button>
+            </div>
+        </div>
+        
+        <button class="burger_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M19.2188 9.21875H0.78125C0.349766 9.21875 0 9.56852 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H19.2188C19.6502 10.7812 20 10.4315 20 10C20 9.56852 19.6502 9.21875 19.2188 9.21875Z" fill="white"/>
+                <path d="M19.2188 2.96875H0.78125C0.349766 2.96875 0 3.31852 0 3.75C0 4.18148 0.349766 4.53125 0.78125 4.53125H19.2188C19.6502 4.53125 20 4.18148 20 3.75C20 3.31852 19.6502 2.96875 19.2188 2.96875Z" fill="white"/>
+                <path d="M19.2188 15.4688H0.78125C0.349766 15.4688 0 15.8185 0 16.25C0 16.6815 0.349766 17.0312 0.78125 17.0312H19.2188C19.6502 17.0312 20 16.6815 20 16.25C20 15.8185 19.6502 15.4688 19.2188 15.4688Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</header>
+
+    <main>
+        <form action="//httpbin.org/post" method="POST">
+            <fieldset>
+              <legend>Личная информация</legend>
+              <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+              </div>
+              <div>
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+              </div>
+              <div>
+                <label>Пол:</label>
+                <label class="gender">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Мужской</label>
+                </label>
+                <label class="gender">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Женский</label>
+                </label>
+              </div>
+              <div>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="••••••" required>
+              </div>
+            </fieldset>
+        
+            <fieldset>
+              <legend>Контактные данные</legend>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+              </div>
+              <div>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+              </div>
+              <div>
+                <label for="contact-time">Удобный интервал для связи:</label>
+                <select id="contact-time" name="contact-time">
+                  <option value="morning">Утро</option>
+                  <option value="day">День</option>
+                  <option value="evening">Вечер</option>
+                  <option value="night">Ночь</option>
+                </select>
+              </div>
+            </fieldset>
+        
+            <div>
+              <button type="submit">
+                <span>Отправить</span>
+              </button>
+              <button type="reset">
+                <span>Сбросить</span>
+              </button>
+            </div>
+          </form>
+        
+    </main>
+    <footer class="footer">
+      <div class="container container__footer">
+          
+          
+          <nav>
+              <a href="index.html" class="logo">
+                  <img src="images/logo.png" alt="Лого CFMOTO">
+              </a>
+              <ul>
+                  <li><a href="#routes">Маршруты</a></li>
+                  <li><a href="grid.html">Галерея</a></li>
+                  <li><a href="#faq">Вопрос-Ответ</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                  <li><a href="form.html">Забронировать</a></li>
+              </ul>
+          </nav>
+          <p>© CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</p>
+      </div>
+  </footer>
+</body>
+</html>
